@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  
+  background-color: rgb(13, 22, 49);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(56, 79, 148);
+  border: 1.5px solid wheat;
+}
+.left {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px black;
+}
+
+.left img{
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  100% {transform: rotateY(360deg);}
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: rgb(245, 182, 1);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.firstsection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+.firstsection > div {
+  width: 35%;
+}
+.leftsection {
+  font-size: 2rem;
+}
+
+.purple {
+  color: rgb(124, 85, 160);
+}
+
+.rightsection {
+  width: 30%;
+}
+
+.rightsection img {
+  width: 70%;
+  margin-top: 25px;
+}
+
+#element {
+  color: purple;
+}
+
+.secondsection {
+  color: gray;
+  height: 80vh;
+  max-width: 80vw;
+  margin: auto;
+}
+
+main hr {
+  border: 0;
+  background: rgb(151, 199, 199);
+  height: 1px;
+  margin: 10px 20px;
+}
+
+.secondsection h1 {
+  font-size: 1.2rem;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.box {
+  display: flex;
+  background: white;
+  width: 76vw;
+  height: 2px;
+  margin: 90px 0;
+}
+
+.vertical {
+  height: 80px;
+  width: 1px;
+  background-color: white;
+  margin: 0 165px;
+  font-size: 15px;
+}
+
+.vertical-title1 {
+  position: relative;
+  top: 35px;
+  left: -30px;
+  width: 150px;
+  color: wheat;
+}
+
+.vertical-desc1 {
+  position: relative;
+  top: 156px;
+  left: -360px;
+  width: 150px;
+  color: gray;
+  font-size: 10px;
+}
+
+.vertical-title2 {
+  position: relative;
+  top: 25px;
+  left: -370px;
+  width: 150px;
+  color: wheat;
+}
+
+.vertical-desc2 {
+  position: relative;
+  top: 150px;
+  left: -700px;
+  width: 150px;
+  color: gray;
+  font-size: 10px;
+}
+
+.vertical-title3 {
+  position: relative;
+  top: 35px;
+  left: -700px;
+  width: 150px;
+  color: wheat;
+}
+
+.vertical-desc3 {
+  position: relative;
+  top: 166px;
+  left: -1030px;
+  width: 150px;
+  color: gray;
+  font-size: 10px;
+}
+
+.image-top {
+  position: relative;
+  top: -50px;
+  width: 50px;
+  left: -25px;
+}
+.image-middle {
+  position: relative;
+  top: -50px;
+  width: 50px;
+  left: -355px;
+}
+
+.image-bottom {
+  position: relative;
+  top: -65px;
+  width: 70px;
+  left: -695px;
+}
+footer {
+  background-color: #6c579f;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 23px 120px;
+}
+.footer ul {
+  list-style: none;
+}
+
+.footer-right {
+  padding: 12px 12px;
+  text-align: center;
+  color: rgb(209, 166, 166);
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    max-width: 480px;
+  }
+  .right {
+    padding: 25px 5px 5px 5px;
+    font-size: 0.3rem;
+  }
+  .left {
+    margin: 5px 5px 5px 5px;
+    font-size: 0.5rem;
+  }
+  .leftsection {
+    font-size: 1rem;
+  }
+  .text-gray {
+    font-size: 0.5rem;
+  }
+  h1 {
+    font-size: 0.4rem;
+  }
+  .vertical {
+    margin: 0 65px;
+  }
+  .vertical-title1 {
+    font-size: 10px;
+    top: 30px;
+    width: 130px;
+    left: -40px;
+  }
+  .vertical-desc1 {
+    font-size: 6px;
+    top: 126px;
+    width: 115px;
+    left: -170px;
+  }
+  .vertical-title2 {
+    font-size: 12px;
+    top: 30px;
+    width: 130px;
+    left: -160px;
+  }
+  .vertical-desc2 {
+    font-size: 4px;
+    top: 136px;
+    width: 120px;
+    left: -290px;
+  }
+  .vertical-title3 {
+    font-size: 12px;
+    top: 30px;
+    width: 130px;
+    left: -275px;
+  }
+  .vertical-desc3 {
+    font-size: 4px;
+    top: 136px;
+    width: 120px;
+    left: -405px;
+  }
+  .image-middle {
+    top: -50px;
+    left: -155px;
+  }
+  .image-bottom {
+    top: -50px;
+    left: -295px;
+  }
+  .footer {
+    max-width: 480px;
+    padding: 23px 20px 23px 20px;
+  }
+  .footer-second,
+  .footer-third,
+  .footer-fourth {
+    font-size: 13px;
+    padding: 12px 12px;
+  }
+  .footer-right {
+    font-size: 3px;
+  }
+}
