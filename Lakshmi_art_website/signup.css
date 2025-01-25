@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(125deg, #ffd15c, #b88400);
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(135deg, #035177, #24b2f9);
+  list-style: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 350px;
+}
+.left {
+  width: 300px;
+  color: #d90429;
+  font-size: 1.5rem;
+}
+.beforepng {
+  height: 70px;
+  width: 70px;
+}
+.right {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+ul {
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+ul li a {
+  text-decoration: none;
+  color: #003049;
+}
+
+ul li a:hover {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}
+
+.containerbox img {
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.tooltrip1,
+.tooltrip2,
+.tooltrip3 {
+  position: relative;
+}
+.tooltriptext1,
+.tooltriptext2,
+.tooltriptext3 {
+  visibility: hidden;
+  width: 40px;
+  background-color: #070d10;
+  color: #fff;
+  font-size: 8px;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 105%;
+  left: 50%;
+  margin-bottom: -60px;
+}
+
+.tooltrip1:hover .tooltriptext1 {
+  visibility: visible;
+}
+.tooltrip2:hover .tooltriptext2 {
+  visibility: visible;
+}
+.tooltrip3:hover .tooltriptext3 {
+  visibility: visible;
+}
+
+.containerbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  width: auto;
+}
+
+.leftbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 350px;
+}
+
+.image1 {
+  height: 330px;
+  width: 330px;
+  border-radius: 2px;
+}
+
+.rightBox {
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-image: linear-gradient(130deg, #03517b, #c2eaff);
+}
+
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 20px 20px;
+}
+
+.user {
+  color: whitesmoke;
+  border: 1px solid black;
+  margin: 10px 0 10px 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 2px;
+  background-image: linear-gradient(-125deg, #72bcfd, #024c8d);
+}
+.pass {
+  color: whitesmoke;
+  background-image: linear-gradient(-125deg, #72bcfd, #024c8d);
+  margin: 10px 0 10px 0;
+  padding: 2px;
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.userid {
+  background-image: linear-gradient(-125deg, #72bcfd, #024c8d);
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px 0 10px 0;
+  padding: 2px 35px 2px 35px;
+  align-items: center;
+}
+
+.passid {
+  background-image: linear-gradient(-125deg, #72bcfd, #024c8d);
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px 0 10px 0;
+  padding: 2px 35px 2px 35px;
+  align-items: center;
+}
+
+.signup {
+  height: 30px;
+  width: 70px;
+  padding: 5px 5px 5px 5px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #023047;
+}
+
+p {
+  font-size: 10px;
+}
+
+.login {
+  color: black;
+  font-size: 12px;
+}
