@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+                <span>:</span>
+                <span id="day">00</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+let hrs = document.getElementById("hrs");
+let min = document.getElementById("min");
+let sec = document.getElementById("sec");
+
+const dayNames = ["Sun","Mon","Tue","Wed","Thr","Fri","Sat"];
+
+let day = document.getElementById("day");
+
+setInterval(() => {
+let currentTime = new Date();
+
+let hours = (currentTime.getHours()<10?"0":"")+ currentTime.getHours();
+if(hours>12){
+    if(hours===13){
+        hours="01";
+    } else if(hours===14){
+        hours="02";
+    } else if(hours===15){
+        hours="03";
+    } else if(hours===16){
+        hours="04";
+    } else if(hours===17){
+        hours="05";
+    } else if(hours===18){
+        hours="06";
+    } else if(hours===19){
+        hours="07";
+    } else if(hours===20){
+        hours="08";
+    } else if(hours===21){
+        hours="09";
+    } else if(hours===22){
+        hours="10";
+    } else if(hours===23){
+        hours="11";
+    } else if(hours===24){
+        hours="12";
+    } 
+}
+hrs.innerHTML = hours;
+min.innerHTML = (currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
+sec.innerHTML = (currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();
+const days = currentTime.getDay();
+
+day.innerHTML = dayNames[days];
+
+},1000);
+
+
+
+
+</script>
+</html>
