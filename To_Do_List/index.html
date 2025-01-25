@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do_List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" href="images/check-list.png">
+</head>
+<header>
+    <nav>
+        
+            <b class="b1">T</b>
+            <b class="b2">	O&#770</b>
+            &nbsp
+            <b class="b3">D</b>
+            <b class="b4">	O&#771</b>
+            &nbsp
+            <b class="b5">L</b>
+            <b class="b6">I</b>
+            <b class="b7">S</b>
+            <b class="b8">T&#771</b>
+        
+    </nav>
+</header>
+<body>
+  <main>
+        
+    <div class="container">
+        <div class="contain">
+            <img style="height: 25px;" src="images/check-list.png" alt="">
+            <input placeholder="Add your text" id="inputBox" type="text">
+            <button class="submitBtn" onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="list_container">
+            <!-- <li class="checked">Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li> -->
+        </ul>
+
+        
+    </div>
+    <div class="containerbox">
+        <div class="clock">
+            <div style="--clr: #ff3d58; --h: 74px" id="hour" class="hand">
+              <i></i>
+            </div>
+            <div style="--clr: #00a6ff; --h: 84px" id="min" class="hand">
+              <i></i>
+            </div>
+            <div style="--clr: #ffffff; --h: 94px" id="sec" class="hand">
+              <i></i>
+            </div>
+    
+            <span style="--i: 1"><b>1</b></span>
+            <span style="--i: 2"><b>2</b></span>
+            <span style="--i: 3"><b>3</b></span>
+            <span style="--i: 4"><b>4</b></span>
+            <span style="--i: 5"><b>5</b></span>
+            <span style="--i: 6"><b>6</b></span>
+            <span style="--i: 7"><b>7</b></span>
+            <span style="--i: 8"><b>8</b></span>
+            <span style="--i: 9"><b>9</b></span>
+            <span style="--i: 10"><b>10</b></span>
+            <span style="--i: 11"><b>11</b></span>
+            <span style="--i: 12"><b>12</b></span>
+          </div>
+    </div>
+    
+  </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
