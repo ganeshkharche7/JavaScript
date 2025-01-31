@@ -1,0 +1,42 @@
+
+@media only screen and (min-width:200px) and (max-width:575px) {
+    .btn-outer{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background: #fff;
+        padding: 5px 0px;
+        left: 0;
+        justify-content: center !important;
+    }
+    .whatsappbtn, .callusbtn{
+        padding: 7px,14px;
+        font-size: 12px;
+    }
+
+    .bannerContent h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .bannerContent br{
+        display: none;
+    }
+    .bannerContent p, ul li{
+        font-size: 16px;
+    }
+    .bannerbtn{
+       flex-direction: column;
+    }
+    .bannerbtn button{
+        width: 100%;
+    }
+
+    .bannerForm{
+        padding: 20px;
+    }
+
+    .highlights-section h2{
+        font-size: 28px;
+
+    }
+}
