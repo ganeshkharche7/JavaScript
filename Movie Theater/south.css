@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(125deg, grey, white);
+    background-size: cover;
+
+}
+
+.navlist{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 150px;
+    height: 100vh;
+    background: white;
+}
+
+.openBtn{
+
+    background: transparent;
+    border: none;
+    margin-top: 15px;
+}
+.closeBtn{
+    position: absolute;
+    left: 120px;
+    width: 30px;
+    background: transparent;
+    border: none;
+}
+
+.navlist ul{
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    height: 88vh;
+    margin-left: -15px;
+    width: 150px;
+
+}
+
+.navlist ul li{
+    margin-left: -40px;
+    margin-top: 15px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 700;
+    color:black;
+}
+
+.navlist ul a{
+    text-decoration: none;
+}
+
+.navlist ul a:hover{
+    text-decoration: underline;
+}
+
+.heading{
+    margin-top: -30px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    animation: blink 1s linear infinite;
+}
+
+
+@keyframes blink {
+    0% { font-size: 35px; color: red; }
+    50% { font-size: 38px; color: purple; }
+    100% { font-size: 35px; color: rgb(8, 155, 26); }
+}
+
+
+.movie1 video{
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    height: 410px;
+    width: 410px;
+    z-index: -1;
+}
+
+.movie2 video{
+    position: absolute;
+    top: -10px;
+    left: 422px;
+    height: 410px;
+    width: 410px;
+    z-index: -1;
+}
+.movie3 video{
+    position: absolute;
+    top: -10px;
+    left: 835px;
+    height: 410px;
+    width: 410px;
+    z-index: -1;
+}
+
+.movie4 video{
+    position: absolute;
+    top: 315px;
+    left: 8px;
+    height: 410px;
+    width: 410px;
+    z-index: -2;
+}
+
+.movie5 video{
+    position: absolute;
+    top: 315px;
+    left: 422px;
+    height: 410px;
+    width: 410px;
+    z-index: -2;
+}
+.movie6 video{
+    position: absolute;
+    top: 315px;
+    left: 835px;
+    height: 410px;
+    width: 410px;
+    z-index: -2;
+}
+
+.movie7 video{
+    position: absolute;
+    top: 640px;
+    left: 8px;
+    height: 410px;
+    width: 410px;
+    z-index: -2;
+}
+
+.movie8 video{
+    position: absolute;
+    top: 640px;
+    left: 422px;
+    height: 410px;
+    width: 410px;
+    z-index: -2;
+}
+.movie9 video{
+    position: absolute;
+    top: 640px;
+    left: 835px;
+    height: 410px;
+    width: 410px;
+    z-index: -2;
+}
